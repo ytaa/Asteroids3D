@@ -80,7 +80,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories);$(SolutionDir)\Asteroids3D\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -102,7 +102,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories);$(SolutionDir)\Asteroids3D\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -126,69 +126,69 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="CameraTarget.cpp" />
-    <ClCompile Include="CollisionHandler.cpp" />
-    <ClCompile Include="DirectionMarker.cpp" />
-    <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="HudController.cpp" />
-    <ClCompile Include="Input.cpp" />
-    <ClCompile Include="InputGame.cpp" />
-    <ClCompile Include="InputGameOver.cpp" />
-    <ClCompile Include="InputMenu.cpp" />
-    <ClCompile Include="Light.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Meteor.cpp" />
-    <ClCompile Include="Missile.cpp" />
-    <ClCompile Include="Model3D.cpp" />
-    <ClCompile Include="Object.cpp" />
-    <ClCompile Include="ParticleEmitter.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="PlayerTarget.cpp" />
-    <ClCompile Include="ResourceHolder.cpp" />
-    <ClCompile Include="rng.cpp" />
-    <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="SkyBox.cpp" />
-    <ClCompile Include="State.cpp" />
-    <ClCompile Include="StateGame.cpp" />
-    <ClCompile Include="StateGameOver.cpp" />
-    <ClCompile Include="StateManager.cpp" />
-    <ClCompile Include="StateMenu.cpp" />
-    <ClCompile Include="Texture2D.cpp" />
-    <ClCompile Include="Vec2.cpp" />
-    <ClCompile Include="Vec3.cpp" />
+    <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\CameraTarget.cpp" />
+    <ClCompile Include="src\CollisionHandler.cpp" />
+    <ClCompile Include="src\DirectionMarker.cpp" />
+    <ClCompile Include="src\Enemy.cpp" />
+    <ClCompile Include="src\HudController.cpp" />
+    <ClCompile Include="src\Input.cpp" />
+    <ClCompile Include="src\InputGame.cpp" />
+    <ClCompile Include="src\InputGameOver.cpp" />
+    <ClCompile Include="src\InputMenu.cpp" />
+    <ClCompile Include="src\Light.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Meteor.cpp" />
+    <ClCompile Include="src\Missile.cpp" />
+    <ClCompile Include="src\Model3D.cpp" />
+    <ClCompile Include="src\Object.cpp" />
+    <ClCompile Include="src\ParticleEmitter.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\PlayerTarget.cpp" />
+    <ClCompile Include="src\ResourceHolder.cpp" />
+    <ClCompile Include="src\rng.cpp" />
+    <ClCompile Include="src\Scene.cpp" />
+    <ClCompile Include="src\SkyBox.cpp" />
+    <ClCompile Include="src\State.cpp" />
+    <ClCompile Include="src\StateGame.cpp" />
+    <ClCompile Include="src\StateGameOver.cpp" />
+    <ClCompile Include="src\StateManager.cpp" />
+    <ClCompile Include="src\StateMenu.cpp" />
+    <ClCompile Include="src\Texture2D.cpp" />
+    <ClCompile Include="src\Vec2.cpp" />
+    <ClCompile Include="src\Vec3.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Camera.h" />
-    <ClInclude Include="CameraTarget.h" />
-    <ClInclude Include="CollisionHandler.h" />
-    <ClInclude Include="DirectionMarker.h" />
-    <ClInclude Include="Enemy.h" />
-    <ClInclude Include="HudController.h" />
-    <ClInclude Include="Input.h" />
-    <ClInclude Include="InputGame.h" />
-    <ClInclude Include="InputGameOver.h" />
-    <ClInclude Include="InputMenu.h" />
-    <ClInclude Include="Light.h" />
-    <ClInclude Include="Meteor.h" />
-    <ClInclude Include="Missile.h" />
-    <ClInclude Include="Model3D.h" />
-    <ClInclude Include="Object.h" />
-    <ClInclude Include="ParticleEmitter.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="PlayerTarget.h" />
-    <ClInclude Include="ResourceHolder.h" />
-    <ClInclude Include="rng.h" />
-    <ClInclude Include="Scene.h" />
-    <ClInclude Include="SkyBox.h" />
-    <ClInclude Include="State.h" />
-    <ClInclude Include="StateGame.h" />
-    <ClInclude Include="StateGameOver.h" />
-    <ClInclude Include="StateManager.h" />
-    <ClInclude Include="StateMenu.h" />
-    <ClInclude Include="Texture2D.h" />
-    <ClInclude Include="Vec2.h" />
-    <ClInclude Include="Vec3.h" />
+    <ClInclude Include="include\Camera.h" />
+    <ClInclude Include="include\CameraTarget.h" />
+    <ClInclude Include="include\CollisionHandler.h" />
+    <ClInclude Include="include\DirectionMarker.h" />
+    <ClInclude Include="include\Enemy.h" />
+    <ClInclude Include="include\HudController.h" />
+    <ClInclude Include="include\Input.h" />
+    <ClInclude Include="include\InputGame.h" />
+    <ClInclude Include="include\InputGameOver.h" />
+    <ClInclude Include="include\InputMenu.h" />
+    <ClInclude Include="include\Light.h" />
+    <ClInclude Include="include\Meteor.h" />
+    <ClInclude Include="include\Missile.h" />
+    <ClInclude Include="include\Model3D.h" />
+    <ClInclude Include="include\Object.h" />
+    <ClInclude Include="include\ParticleEmitter.h" />
+    <ClInclude Include="include\Player.h" />
+    <ClInclude Include="include\PlayerTarget.h" />
+    <ClInclude Include="include\ResourceHolder.h" />
+    <ClInclude Include="include\rng.h" />
+    <ClInclude Include="include\Scene.h" />
+    <ClInclude Include="include\SkyBox.h" />
+    <ClInclude Include="include\State.h" />
+    <ClInclude Include="include\StateGame.h" />
+    <ClInclude Include="include\StateGameOver.h" />
+    <ClInclude Include="include\StateManager.h" />
+    <ClInclude Include="include\StateMenu.h" />
+    <ClInclude Include="include\Texture2D.h" />
+    <ClInclude Include="include\Vec2.h" />
+    <ClInclude Include="include\Vec3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
